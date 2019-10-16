@@ -1,0 +1,22 @@
+import math
+
+def primo(num):
+	lim = int((math.sqrt(num)))
+	for i in range(2,lim+1):
+		if num%i == 0:
+			return True
+	
+	return False
+	
+eae1 = int(raw_input())
+for x in range(eae1):
+	eae = int(raw_input())
+	if eae <= 1:
+		print "Not Prime"
+	else:	
+		if primo(eae):
+			print "Not Prime"
+		else:
+			print "Prime"				
+
+	
